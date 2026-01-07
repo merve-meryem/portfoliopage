@@ -12,23 +12,22 @@ function Contact() {
     e.preventDefault();
     setError(false);
     setSuccess(false);
-console.log(form.current)
     emailjs
       .sendForm(
         import.meta.env.VITE_SERVICE_ID,
         import.meta.env.VITE_TEMPLATE_ID,
-        form.current,  
+        form.current,
         import.meta.env.VITE_PUBLIC_KEY
-  )
+      )
       .then(
         () => {
-          console.log('SUCCESS!');
-          setSuccess(true)
+          console.log("SUCCESS!");
+          setSuccess(true);
         },
         (error) => {
-          console.log('FAILED...', error);
-          setError(true)
-        },
+          console.log("FAILED...", error);
+          setError(true);
+        }
       );
   };
 
@@ -83,7 +82,7 @@ console.log(form.current)
             name="user_email"
             className="bg-transparent border-b-2 border-b-black outline-none "
           />
-          
+
           <span>Regards</span>
           <button className="bg-yellow-200 rounded font-semibold text-gray-600 p-4">
             Send
