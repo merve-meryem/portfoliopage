@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import filmler from "../assets/filmler.jpg";
 import watchlist from "../assets/watchlist.jpg";
 import currency from "../assets/currency.png";
-import fungi from "../assets/FungiStore.png";
+import fungi from "../assets/Fungistore.png";
 import pizza from "../assets/pizzareact.png";
 import { useHistory } from "react-router-dom";
 import { IoArrowDownCircleOutline } from "react-icons/io5";
