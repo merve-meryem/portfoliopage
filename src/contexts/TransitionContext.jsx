@@ -14,7 +14,7 @@ export default function TransitionContextProvider({ children }) {
       <AnimatePresence mode="wait">
         <motion.div
           key={location.pathname}
-          className="relative w-screen h-screen bg-blue-50"
+          className="relative h-full bg-blue-50"
         >
           {/* <motion.div
             className="relative h-screen w-screen fixed bg-green-100 rounded-b-[100px] z-40"
@@ -31,7 +31,7 @@ export default function TransitionContextProvider({ children }) {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >{location.pathname.substring(1)} </motion.div> */}
           <motion.div
-            className="h-screen w-screen fixed bg-yellow-50 rounded-t-[100px] bottom-0 z-40"
+            className=" fixed bg-yellow-50 rounded-t-[100px] bottom-0 z-40"
             initial={{ height: "140vh" }}
             animate={{ height: "0vh", transition: { delay: 0.5 } }}
           />
@@ -40,7 +40,7 @@ export default function TransitionContextProvider({ children }) {
             <Header />
           </div>
 
-          <div className="relative z-0 h-[calc(100vh-6rem)]">{children}</div>
+          <div className="relative z-0">{children}</div>
         </motion.div>
       </AnimatePresence>
     </TransitionContext.Provider>

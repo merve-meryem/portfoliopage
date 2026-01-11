@@ -70,41 +70,41 @@ function Header() {
   };
 
   return (
-    <div className="h-24 flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
-      <div className=" md-hidden flex gap-4 w-1/2">
+    <div className="h-24 justify-end md:justify-between flex items-center px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
+      <div className=" hidden md:flex gap-4 w-1/2">
         {links.map((link) => (
           <Navlink link={link} key={link.title} />
         ))}
       </div>
-      <div className=" flex flex-row items-end gap-4 ">
+      <div className=" hidden md:flex flex-row items-end gap-4 ">
         <a href="https://github.com/merve-meryem" target="_blank">
           <FaGithub />
         </a>
-        <a href="www.linkedin.com/in/mervemeryemkoyuncu" target="_blank">
+        <a href="https://linkedin.com/in/mervemeryemkoyuncu" target="_blank">
           <FaLinkedin />
         </a>
       </div>
       {/*Responsive Menu*/}
-      <div className="md-hidden mt-0 mr-4">
+      <div className="md:hidden">
         {/*Button*/}
         <button
           onClick={() => setOpen((prev) => !prev)}
-          className="w-10 h-1 flex-col justify-between z-50 relative"
+          className="w-5 h-1 flex-col justify-between z-50 relative"
         >
           <motion.div
             variants={topVariants}
             animate={open ? "opened" : "closed"}
-            className="w-10  h-1 bg-black rounded origin-left"
+            className="w-6  h-1 bg-black rounded origin-left"
           ></motion.div>
           <motion.div
             variants={centerVariants}
             animate={open ? "opened" : "closed"}
-            className="w-10 my-2 h-1 bg-black rounded"
+            className="w-6 my-1 h-1 bg-black rounded"
           ></motion.div>
           <motion.div
             variants={bottomVariants}
             animate={open ? "opened" : "closed"}
-            className="w-10 my-2 h-1 bg-black rounded origin-left"
+            className="w-6 my-1 h-1 bg-black rounded origin-left"
           ></motion.div>
         </button>
       </div>

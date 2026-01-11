@@ -61,7 +61,7 @@ function Portfolio() {
       transition={{ duration: 1 }}
     >
       <div className="h-[600vh] relative" ref={ref}>
-        <div className="w-full h-[calc(100vh-6rem)] flex flex-col gap-10 items-center justify-center text-8xl text-center">
+        <div className="w-full h-[calc(100vh-6rem)] flex flex-col gap-10 items-center justify-center text-3xl sm:text-5xl md:text-8xl text-center">
           MY PROJECTS
           <div>
             <IoArrowDownCircleOutline className="w-10" />

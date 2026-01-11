@@ -11,16 +11,19 @@ function Home() {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div className=" flex mx-50 mt-30 flex-col lg:flex-row px-4 sm:px-8 md:px-12 xl:px-48">
+      <div className=" flex justify-center mt-30 flex-col lg:flex-row px-4 sm:px-8 md:px-12 xl:px-48">
         {/* IMAGE CONTAINER */}
-        <div className="relative  lg:h-full lg:w-1/2 ">
-          <img src={home} className="object-contain w-1/2 rounded-full " />
+        <div className="relative ">
+          <img
+            src={home}
+            className=" rounded-full max-w-[200px] lg:max-w-[300px] m-auto"
+          />
         </div>
 
         {/* TEXT CONTAINER */}
-        <div className="ml-10 relative lg:h-full lg:1-1/2 mt-8 flex flex-col gap-8 items-center text-center">
-          <h1 className="text-4xl md:text-6xl font-bold">Merhaba</h1>
-          <p className="md:text-2xl">I'm, Merve Meryem</p>
+        <div className=" relative lg:h-full lg:w-1/2 mt-8 flex flex-col gap-8 items-center text-center">
+          <h1 className="text-4xl md:text-6xl font-bold">Hello!</h1>
+          <p className="md:text-2xl">I'm, Merve Meryem Koyuncu</p>
           <span className="md:text-xl">Frontend Developer</span>
 
           <div className="flex  gap-4">
